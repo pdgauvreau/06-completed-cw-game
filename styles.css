@@ -24,13 +24,15 @@ Fonts:
     box-sizing: border-box;
 }
 
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg, #8BD1CB 0%, #2E9DF7 100%);
-    font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', 'Segoe UI', Arial, sans-serif;
 }
 
 .game-wrapper {
@@ -53,8 +55,10 @@ body {
     margin-top: 0;
     margin-bottom: 5px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
+    letter-spacing: -0.5px;
 }
 
 .game-tagline {
@@ -77,10 +81,11 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     transition: all 0.3s ease;
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
 }
 
 .difficulty-btn:hover {
@@ -120,20 +125,23 @@ body {
     align-items: center;
     width: 800px;
     padding: 15px 20px;
-    background-color: #fff;
+    background: linear-gradient(135deg, rgba(139, 209, 203, 0.95) 0%, rgba(46, 157, 247, 0.95) 100%);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .timer {
     flex: 0 1 auto;
     font-size: 24px;
-    font-weight: bold;
-    color: #2E9DF7;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .timer.warning {
-    color: #F5402C;
+    color: #FFC907;
     animation: pulse 0.5s ease-in-out infinite;
 }
 
@@ -161,9 +169,10 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
 }
 
 #start-btn:hover {
@@ -181,8 +190,10 @@ body {
 .score {
     flex: 0 1 auto;
     font-size: 24px;
-    font-weight: bold;
-    color: #159A48;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .water-drop {
@@ -231,6 +242,8 @@ body {
     font-size: 36px;
     margin-bottom: 20px;
     color: #2E9DF7;
+    font-weight: 700;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
 }
 
 .game-over-message.win h2 {
@@ -249,9 +262,10 @@ body {
 
 .game-over-message .final-score {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 700;
     color: #FFC907;
     margin: 20px 0;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
 }
 
 .game-over-message .difficulty-label {
@@ -273,19 +287,22 @@ body {
 .charity-footer {
     margin-top: 30px;
     padding: 25px 30px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, rgba(139, 209, 203, 0.95) 0%, rgba(46, 157, 247, 0.95) 100%);
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     max-width: 800px;
     width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-message {
     font-size: 20px;
-    font-weight: bold;
-    color: #2E9DF7;
+    font-weight: 700;
+    color: #fff;
     margin-bottom: 20px;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .footer-links {
@@ -298,20 +315,23 @@ body {
 
 .footer-link {
     padding: 12px 24px;
-    background-color: #2E9DF7;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #2E9DF7;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Avenir', sans-serif;
+    border: 2px solid transparent;
 }
 
 .footer-link:hover {
-    background-color: #1E7DC7;
+    background-color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-color: #2E9DF7;
 }
 
 .footer-link.donate-link {
@@ -321,12 +341,14 @@ body {
 
 .footer-link.donate-link:hover {
     background-color: #FF902A;
+    border-color: #FF902A;
 }
 
 .footer-note {
     font-size: 14px;
-    color: #666;
+    color: #fff;
     font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 @media (max-width: 850px) {
@@ -375,5 +397,23 @@ body {
 
     .game-over-message p {
         font-size: 16px;
+    }
+
+    .charity-footer {
+        padding: 20px 15px;
+        margin-top: 20px;
+    }
+
+    .footer-message {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+
+    .footer-link {
+        padding: 10px 18px;
+        font-size: 14px;
     }
 }
