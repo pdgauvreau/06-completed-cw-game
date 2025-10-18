@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Drop Game - charity: water</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <!-- charity: water logo -->
+        <svg class="logo" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+            <text x="10" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFC907">charity: water</text>
+            <circle cx="180" cy="25" r="15" fill="#2E9DF7"/>
+            <text x="172" y="32" font-size="20" fill="white">💧</text>
+        </svg>
+
+        <h1 class="game-title">Water Drop</h1>
+        <p class="game-tagline">Catch the drops to help bring clean water to those in need!</p>
+        
+        <!-- Difficulty Selector -->
+        <div class="difficulty-selector">
+            <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn" data-difficulty="normal">Normal</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+
+        <div class="difficulty-info">
+            <strong>Easy:</strong> Catch 15 drops in 40 seconds
+        </div>
+        
+        <div class="score-panel">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="timer">Time: <span id="time">40</span>s</div>
+            <button id="start-btn">Start Game</button>
+        </div>
+        
+        <div id="game-container"></div>
+        
+        <!-- Footer with charity: water links -->
+        <footer class="charity-footer">
+            <p class="footer-message">Help bring clean water to people in need</p>
+            <div class="footer-links">
+                <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    Visit charity: water
+                </a>
+                <a href="https://www.charitywater.org/donate" target="_blank" rel="noopener noreferrer" class="footer-link donate-link">
+                    💧 Donate Now
+                </a>
+                <a href="https://www.charitywater.org/our-projects" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    See Our Projects
+                </a>
+            </div>
+            <p class="footer-note">100% of public donations fund water projects</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
